@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+*.egg-info/
+
+# PyCharm
+.idea/
+
+# Build/output
+build/
+dist/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+
+# Qt generated files
+*_rc.py
+ui_*.py
+
+# Large generated previews/render outputs
+assets/previews/generated/
