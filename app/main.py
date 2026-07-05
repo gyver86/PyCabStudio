@@ -1,34 +1,29 @@
-from pathlib import Path
 import sys
-
-from PySide6.QtWidgets import QApplication
-from PySide6.QtUiTools import QUiLoader
-from PySide6.QtCore import QFile
+from PySide6.QtWidgets import QApplication, QMainWindow
+from app.ui.ui_PyCabStudio import Ui_MainWindow
 
 
-def load_ui():
-    ui_path = Path(__file__).parent / "ui" / "main_window.ui"
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+        self.clearProperties()
+        self.ui.pushButtonWall.clicked.connect(self.wallTool)
 
-    file = QFile(str(ui_path))
-    if not file.open(QFile.ReadOnly):
-        raise RuntimeError(f"Cannot open UI file: {ui_path}")
+    def clearProperties(self):
+        self.ui.labelSelectedToolOrObject.setVisible(False)
 
-    loader = QUiLoader()
-    window = loader.load(file)
-    file.close()
+    def wallTool(self):
+        self.ui.labelSelectedToolOrObject.setText('Draw Wall')
+        self.ui.labelSelectedToolOrObject.setVisible(True)
 
-    if window is None:
-        raise RuntimeError("Failed to load UI file.")
-
-    return window
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = load_ui()
-    window.show()
-    sys.exit(app.exec())
 
 
 if __name__ == "__main__":
-    main()
+    app = QApplication(sys.argv)
+
+    window = MainWindow()
+    window.show()
+
+    sys.exit(app.exec())

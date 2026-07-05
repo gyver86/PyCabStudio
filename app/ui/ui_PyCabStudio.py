@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'PyCab StudioSVYvsz.ui'
+## Form generated from reading UI file 'main_windowOceLHi.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -16,10 +16,11 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QHBoxLayout,
-    QLabel, QMainWindow, QMenu, QMenuBar,
-    QPushButton, QSizePolicy, QSpacerItem, QSplitter,
-    QStatusBar, QTabWidget, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QGridLayout,
+    QHBoxLayout, QLabel, QLineEdit, QMainWindow,
+    QMenu, QMenuBar, QPushButton, QSizePolicy,
+    QSpacerItem, QSplitter, QStatusBar, QTabWidget,
+    QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -74,14 +75,14 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setContentsMargins(2, 2, 2, 2)
         self.widgetLeftButtons = QWidget(self.widgetMain_Middle)
         self.widgetLeftButtons.setObjectName(u"widgetLeftButtons")
-        self.widgetLeftButtons.setMinimumSize(QSize(105, 0))
-        self.widgetLeftButtons.setMaximumSize(QSize(100, 16777215))
+        self.widgetLeftButtons.setMinimumSize(QSize(0, 0))
+        self.widgetLeftButtons.setMaximumSize(QSize(105, 16777215))
         self.verticalLayout_3 = QVBoxLayout(self.widgetLeftButtons)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.frameBuild = QFrame(self.widgetLeftButtons)
         self.frameBuild.setObjectName(u"frameBuild")
-        self.frameBuild.setMinimumSize(QSize(105, 120))
+        self.frameBuild.setMinimumSize(QSize(0, 120))
         self.frameBuild.setStyleSheet(u"background-color: rgb(222, 222, 222);")
         self.frameBuild.setFrameShape(QFrame.Shape.StyledPanel)
         self.frameBuild.setFrameShadow(QFrame.Shadow.Raised)
@@ -147,7 +148,7 @@ class Ui_MainWindow(object):
 
         self.frameObject = QFrame(self.widgetLeftButtons)
         self.frameObject.setObjectName(u"frameObject")
-        self.frameObject.setMinimumSize(QSize(105, 80))
+        self.frameObject.setMinimumSize(QSize(0, 80))
         self.frameObject.setStyleSheet(u"background-color: rgb(222, 222, 222);")
         self.frameObject.setFrameShape(QFrame.Shape.StyledPanel)
         self.frameObject.setFrameShadow(QFrame.Shadow.Raised)
@@ -168,7 +169,7 @@ class Ui_MainWindow(object):
 
         self.frameDraw = QFrame(self.widgetLeftButtons)
         self.frameDraw.setObjectName(u"frameDraw")
-        self.frameDraw.setMinimumSize(QSize(105, 80))
+        self.frameDraw.setMinimumSize(QSize(0, 80))
         self.frameDraw.setStyleSheet(u"background-color: rgb(222, 222, 222);")
         self.frameDraw.setFrameShape(QFrame.Shape.StyledPanel)
         self.frameDraw.setFrameShadow(QFrame.Shadow.Raised)
@@ -216,7 +217,7 @@ class Ui_MainWindow(object):
 
         self.frameViewMode = QFrame(self.widgetLeftButtons)
         self.frameViewMode.setObjectName(u"frameViewMode")
-        self.frameViewMode.setMinimumSize(QSize(105, 120))
+        self.frameViewMode.setMinimumSize(QSize(0, 120))
         self.frameViewMode.setStyleSheet(u"background-color: rgb(222, 222, 222);")
         self.frameViewMode.setFrameShape(QFrame.Shape.StyledPanel)
         self.frameViewMode.setFrameShadow(QFrame.Shadow.Raised)
@@ -295,7 +296,7 @@ class Ui_MainWindow(object):
         self.frameTemporaryMainCAD.setFrameShadow(QFrame.Shadow.Raised)
         self.labelTemporaryCadView = QLabel(self.frameTemporaryMainCAD)
         self.labelTemporaryCadView.setObjectName(u"labelTemporaryCadView")
-        self.labelTemporaryCadView.setGeometry(QRect(210, 225, 286, 56))
+        self.labelTemporaryCadView.setGeometry(QRect(245, 265, 286, 56))
         font = QFont()
         font.setPointSize(24)
         self.labelTemporaryCadView.setFont(font)
@@ -348,9 +349,64 @@ class Ui_MainWindow(object):
         self.tabWidgetRightMenuTop.setTabShape(QTabWidget.TabShape.Rounded)
         self.tabProject = QWidget()
         self.tabProject.setObjectName(u"tabProject")
+        self.gridLayout = QGridLayout(self.tabProject)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.lineEdit = QLineEdit(self.tabProject)
+        self.lineEdit.setObjectName(u"lineEdit")
+
+        self.gridLayout.addWidget(self.lineEdit, 0, 1, 1, 1)
+
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.gridLayout.addItem(self.verticalSpacer, 2, 0, 1, 1)
+
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout.addItem(self.horizontalSpacer, 0, 2, 1, 1)
+
+        self.label = QLabel(self.tabProject)
+        self.label.setObjectName(u"label")
+
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+
+        self.label_2 = QLabel(self.tabProject)
+        self.label_2.setObjectName(u"label_2")
+
+        self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
+
+        self.lineEdit_2 = QLineEdit(self.tabProject)
+        self.lineEdit_2.setObjectName(u"lineEdit_2")
+        self.lineEdit_2.setMaximumSize(QSize(16777215, 16777215))
+
+        self.gridLayout.addWidget(self.lineEdit_2, 1, 1, 1, 1)
+
         self.tabWidgetRightMenuTop.addTab(self.tabProject, "")
         self.tabProperties = QWidget()
         self.tabProperties.setObjectName(u"tabProperties")
+        self.gridLayout_2 = QGridLayout(self.tabProperties)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.labelSelectedToolOrObject = QLabel(self.tabProperties)
+        self.labelSelectedToolOrObject.setObjectName(u"labelSelectedToolOrObject")
+        self.labelSelectedToolOrObject.setEnabled(True)
+        font1 = QFont()
+        font1.setPointSize(14)
+        self.labelSelectedToolOrObject.setFont(font1)
+        self.labelSelectedToolOrObject.setTextInteractionFlags(Qt.TextInteractionFlag.LinksAccessibleByMouse)
+
+        self.gridLayout_2.addWidget(self.labelSelectedToolOrObject, 0, 1, 1, 1)
+
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_2.addItem(self.horizontalSpacer_2, 0, 2, 1, 1)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.gridLayout_2.addItem(self.verticalSpacer_2, 1, 1, 1, 1)
+
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_2.addItem(self.horizontalSpacer_3, 0, 0, 1, 1)
+
         self.tabWidgetRightMenuTop.addTab(self.tabProperties, "")
         self.tabAdvanced = QWidget()
         self.tabAdvanced.setObjectName(u"tabAdvanced")
@@ -358,9 +414,12 @@ class Ui_MainWindow(object):
         self.splitterProject_ObjectTree.addWidget(self.tabWidgetRightMenuTop)
         self.tabWidgetRightMenuBottom = QTabWidget(self.splitterProject_ObjectTree)
         self.tabWidgetRightMenuBottom.setObjectName(u"tabWidgetRightMenuBottom")
-        self.tabObjecTree = QWidget()
-        self.tabObjecTree.setObjectName(u"tabObjecTree")
-        self.tabWidgetRightMenuBottom.addTab(self.tabObjecTree, "")
+        self.tabObjectTree = QWidget()
+        self.tabObjectTree.setObjectName(u"tabObjectTree")
+        self.tabWidgetRightMenuBottom.addTab(self.tabObjectTree, "")
+        self.tabWarnings = QWidget()
+        self.tabWarnings.setObjectName(u"tabWarnings")
+        self.tabWidgetRightMenuBottom.addTab(self.tabWarnings, "")
         self.tabCutlist = QWidget()
         self.tabCutlist.setObjectName(u"tabCutlist")
         self.tabWidgetRightMenuBottom.addTab(self.tabCutlist, "")
@@ -418,7 +477,7 @@ class Ui_MainWindow(object):
         self.pushButtonSide.setDefault(False)
         self.pushButton3D.setDefault(False)
         self.tabWidgetDockerBottom.setCurrentIndex(1)
-        self.tabWidgetRightMenuTop.setCurrentIndex(2)
+        self.tabWidgetRightMenuTop.setCurrentIndex(1)
         self.tabWidgetRightMenuBottom.setCurrentIndex(0)
 
 
@@ -426,7 +485,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"PyCab Studio", None))
         self.actionNew.setText(QCoreApplication.translate("MainWindow", u"New", None))
         self.actionOpen.setText(QCoreApplication.translate("MainWindow", u"Open", None))
         self.actionSave.setText(QCoreApplication.translate("MainWindow", u"Save", None))
@@ -461,10 +520,14 @@ class Ui_MainWindow(object):
         self.labelTemporaryCadView.setText(QCoreApplication.translate("MainWindow", u"CAD VIEW HERE", None))
         self.tabWidgetDockerBottom.setTabText(self.tabWidgetDockerBottom.indexOf(self.tabCabinetLibrary), QCoreApplication.translate("MainWindow", u"Cabinet Library ", None))
         self.tabWidgetDockerBottom.setTabText(self.tabWidgetDockerBottom.indexOf(self.tabMaterialLibrary), QCoreApplication.translate("MainWindow", u"Material Library", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Project:", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Client:", None))
         self.tabWidgetRightMenuTop.setTabText(self.tabWidgetRightMenuTop.indexOf(self.tabProject), QCoreApplication.translate("MainWindow", u"Project", None))
+        self.labelSelectedToolOrObject.setText(QCoreApplication.translate("MainWindow", u"selected tool or object", None))
         self.tabWidgetRightMenuTop.setTabText(self.tabWidgetRightMenuTop.indexOf(self.tabProperties), QCoreApplication.translate("MainWindow", u"Properties", None))
         self.tabWidgetRightMenuTop.setTabText(self.tabWidgetRightMenuTop.indexOf(self.tabAdvanced), QCoreApplication.translate("MainWindow", u"Advanced", None))
-        self.tabWidgetRightMenuBottom.setTabText(self.tabWidgetRightMenuBottom.indexOf(self.tabObjecTree), QCoreApplication.translate("MainWindow", u"Object tree", None))
+        self.tabWidgetRightMenuBottom.setTabText(self.tabWidgetRightMenuBottom.indexOf(self.tabObjectTree), QCoreApplication.translate("MainWindow", u"Object tree", None))
+        self.tabWidgetRightMenuBottom.setTabText(self.tabWidgetRightMenuBottom.indexOf(self.tabWarnings), QCoreApplication.translate("MainWindow", u"Warnings", None))
         self.tabWidgetRightMenuBottom.setTabText(self.tabWidgetRightMenuBottom.indexOf(self.tabCutlist), QCoreApplication.translate("MainWindow", u"Cutlist", None))
         self.menuFile.setTitle(QCoreApplication.translate("MainWindow", u"File", None))
         self.menuView.setTitle(QCoreApplication.translate("MainWindow", u"View", None))
