@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowxjCeKz.ui'
+## Form generated from reading UI file 'main_windowjMYjTF.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.10.1
+## Created by: Qt User Interface Compiler version 6.9.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -16,11 +16,12 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QGridLayout,
-    QHBoxLayout, QLabel, QLineEdit, QMainWindow,
-    QMenu, QMenuBar, QPushButton, QSizePolicy,
-    QSpacerItem, QSpinBox, QSplitter, QStatusBar,
-    QTabWidget, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QAbstractScrollArea, QApplication, QComboBox, QFrame,
+    QGridLayout, QHBoxLayout, QLabel, QLineEdit,
+    QMainWindow, QMenu, QMenuBar, QPushButton,
+    QScrollArea, QSizePolicy, QSpacerItem, QSpinBox,
+    QSplitter, QStatusBar, QTabWidget, QVBoxLayout,
+    QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -384,18 +385,38 @@ class Ui_MainWindow(object):
         self.tabProperties = QWidget()
         self.tabProperties.setObjectName(u"tabProperties")
         self.verticalLayout_5 = QVBoxLayout(self.tabProperties)
+        self.verticalLayout_5.setSpacing(0)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
-        self.widgetProperties_1 = QWidget(self.tabProperties)
+        self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.scrollAreaProperties = QScrollArea(self.tabProperties)
+        self.scrollAreaProperties.setObjectName(u"scrollAreaProperties")
+        self.scrollAreaProperties.setStyleSheet(u"background-color: white;")
+        self.scrollAreaProperties.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollAreaProperties.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollAreaProperties.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+        self.scrollAreaProperties.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustIgnored)
+        self.scrollAreaProperties.setWidgetResizable(True)
+        self.scrollAreaWidgetContentsProperties = QWidget()
+        self.scrollAreaWidgetContentsProperties.setObjectName(u"scrollAreaWidgetContentsProperties")
+        self.scrollAreaWidgetContentsProperties.setGeometry(QRect(0, 0, 262, 691))
+        self.verticalLayout_6 = QVBoxLayout(self.scrollAreaWidgetContentsProperties)
+        self.verticalLayout_6.setSpacing(2)
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
+        self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.widgetProperties_1 = QWidget(self.scrollAreaWidgetContentsProperties)
         self.widgetProperties_1.setObjectName(u"widgetProperties_1")
-        self.widgetProperties_1.setMinimumSize(QSize(0, 25))
-        self.widgetProperties_1.setMaximumSize(QSize(16777215, 25))
+        self.widgetProperties_1.setMinimumSize(QSize(0, 30))
+        self.widgetProperties_1.setMaximumSize(QSize(16777215, 30))
         self.horizontalLayout_4 = QHBoxLayout(self.widgetProperties_1)
         self.horizontalLayout_4.setSpacing(0)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
-        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.labelPropertiesBlank1 = QLabel(self.widgetProperties_1)
+        self.labelPropertiesBlank1.setObjectName(u"labelPropertiesBlank1")
+        self.labelPropertiesBlank1.setMinimumSize(QSize(30, 0))
+        self.labelPropertiesBlank1.setMaximumSize(QSize(30, 16777215))
 
-        self.horizontalLayout_4.addItem(self.horizontalSpacer_3)
+        self.horizontalLayout_4.addWidget(self.labelPropertiesBlank1)
 
         self.labelSelectedToolOrObject = QLabel(self.widgetProperties_1)
         self.labelSelectedToolOrObject.setObjectName(u"labelSelectedToolOrObject")
@@ -412,9 +433,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.addItem(self.horizontalSpacer_2)
 
 
-        self.verticalLayout_5.addWidget(self.widgetProperties_1)
+        self.verticalLayout_6.addWidget(self.widgetProperties_1)
 
-        self.widgetProperties_2 = QWidget(self.tabProperties)
+        self.widgetProperties_2 = QWidget(self.scrollAreaWidgetContentsProperties)
         self.widgetProperties_2.setObjectName(u"widgetProperties_2")
         self.horizontalLayout_6 = QHBoxLayout(self.widgetProperties_2)
         self.horizontalLayout_6.setSpacing(6)
@@ -428,6 +449,7 @@ class Ui_MainWindow(object):
 
         self.labelPositionX = QLabel(self.widgetProperties_2)
         self.labelPositionX.setObjectName(u"labelPositionX")
+        self.labelPositionX.setMinimumSize(QSize(36, 0))
         self.labelPositionX.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.labelPositionX.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -439,10 +461,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.spinBoxPositionX)
 
+        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.verticalLayout_5.addWidget(self.widgetProperties_2)
+        self.horizontalLayout_6.addItem(self.horizontalSpacer_4)
 
-        self.widgetProperties_3 = QWidget(self.tabProperties)
+
+        self.verticalLayout_6.addWidget(self.widgetProperties_2)
+
+        self.widgetProperties_3 = QWidget(self.scrollAreaWidgetContentsProperties)
         self.widgetProperties_3.setObjectName(u"widgetProperties_3")
         self.horizontalLayout_8 = QHBoxLayout(self.widgetProperties_3)
         self.horizontalLayout_8.setSpacing(6)
@@ -456,6 +482,7 @@ class Ui_MainWindow(object):
 
         self.labelPositionY = QLabel(self.widgetProperties_3)
         self.labelPositionY.setObjectName(u"labelPositionY")
+        self.labelPositionY.setMinimumSize(QSize(36, 0))
         self.labelPositionY.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.labelPositionY.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -467,10 +494,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_8.addWidget(self.spinBoxPositionY)
 
+        self.horizontalSpacer_5 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.verticalLayout_5.addWidget(self.widgetProperties_3)
+        self.horizontalLayout_8.addItem(self.horizontalSpacer_5)
 
-        self.widgetProperties_4 = QWidget(self.tabProperties)
+
+        self.verticalLayout_6.addWidget(self.widgetProperties_3)
+
+        self.widgetProperties_4 = QWidget(self.scrollAreaWidgetContentsProperties)
         self.widgetProperties_4.setObjectName(u"widgetProperties_4")
         self.horizontalLayout_9 = QHBoxLayout(self.widgetProperties_4)
         self.horizontalLayout_9.setSpacing(6)
@@ -484,6 +515,7 @@ class Ui_MainWindow(object):
 
         self.labelPositionZ = QLabel(self.widgetProperties_4)
         self.labelPositionZ.setObjectName(u"labelPositionZ")
+        self.labelPositionZ.setMinimumSize(QSize(36, 0))
         self.labelPositionZ.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.labelPositionZ.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -495,17 +527,21 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_9.addWidget(self.spinBoxPositionZ)
 
+        self.horizontalSpacer_6 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.verticalLayout_5.addWidget(self.widgetProperties_4)
+        self.horizontalLayout_9.addItem(self.horizontalSpacer_6)
 
-        self.line = QFrame(self.tabProperties)
-        self.line.setObjectName(u"line")
-        self.line.setFrameShape(QFrame.Shape.HLine)
-        self.line.setFrameShadow(QFrame.Shadow.Sunken)
 
-        self.verticalLayout_5.addWidget(self.line)
+        self.verticalLayout_6.addWidget(self.widgetProperties_4)
 
-        self.widgetProperties_5 = QWidget(self.tabProperties)
+        self.line_2 = QFrame(self.scrollAreaWidgetContentsProperties)
+        self.line_2.setObjectName(u"line_2")
+        self.line_2.setFrameShape(QFrame.Shape.HLine)
+        self.line_2.setFrameShadow(QFrame.Shadow.Sunken)
+
+        self.verticalLayout_6.addWidget(self.line_2)
+
+        self.widgetProperties_5 = QWidget(self.scrollAreaWidgetContentsProperties)
         self.widgetProperties_5.setObjectName(u"widgetProperties_5")
         self.horizontalLayout_11 = QHBoxLayout(self.widgetProperties_5)
         self.horizontalLayout_11.setSpacing(6)
@@ -519,6 +555,7 @@ class Ui_MainWindow(object):
 
         self.labelRotationX = QLabel(self.widgetProperties_5)
         self.labelRotationX.setObjectName(u"labelRotationX")
+        self.labelRotationX.setMinimumSize(QSize(36, 0))
         self.labelRotationX.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.labelRotationX.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -530,10 +567,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_11.addWidget(self.spinBoxRotationX)
 
+        self.horizontalSpacer_7 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.verticalLayout_5.addWidget(self.widgetProperties_5)
+        self.horizontalLayout_11.addItem(self.horizontalSpacer_7)
 
-        self.widgetProperties_6 = QWidget(self.tabProperties)
+
+        self.verticalLayout_6.addWidget(self.widgetProperties_5)
+
+        self.widgetProperties_6 = QWidget(self.scrollAreaWidgetContentsProperties)
         self.widgetProperties_6.setObjectName(u"widgetProperties_6")
         self.horizontalLayout_12 = QHBoxLayout(self.widgetProperties_6)
         self.horizontalLayout_12.setSpacing(6)
@@ -547,6 +588,7 @@ class Ui_MainWindow(object):
 
         self.labelRotationY = QLabel(self.widgetProperties_6)
         self.labelRotationY.setObjectName(u"labelRotationY")
+        self.labelRotationY.setMinimumSize(QSize(36, 0))
         self.labelRotationY.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.labelRotationY.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -558,10 +600,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_12.addWidget(self.spinBoxRotationY)
 
+        self.horizontalSpacer_8 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.verticalLayout_5.addWidget(self.widgetProperties_6)
+        self.horizontalLayout_12.addItem(self.horizontalSpacer_8)
 
-        self.widgetProperties_7 = QWidget(self.tabProperties)
+
+        self.verticalLayout_6.addWidget(self.widgetProperties_6)
+
+        self.widgetProperties_7 = QWidget(self.scrollAreaWidgetContentsProperties)
         self.widgetProperties_7.setObjectName(u"widgetProperties_7")
         self.horizontalLayout_10 = QHBoxLayout(self.widgetProperties_7)
         self.horizontalLayout_10.setSpacing(6)
@@ -575,6 +621,7 @@ class Ui_MainWindow(object):
 
         self.labelRotationZ = QLabel(self.widgetProperties_7)
         self.labelRotationZ.setObjectName(u"labelRotationZ")
+        self.labelRotationZ.setMinimumSize(QSize(36, 0))
         self.labelRotationZ.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.labelRotationZ.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -586,17 +633,21 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_10.addWidget(self.spinBoxRotationZ)
 
+        self.horizontalSpacer_9 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.verticalLayout_5.addWidget(self.widgetProperties_7)
+        self.horizontalLayout_10.addItem(self.horizontalSpacer_9)
 
-        self.line_2 = QFrame(self.tabProperties)
-        self.line_2.setObjectName(u"line_2")
-        self.line_2.setFrameShape(QFrame.Shape.HLine)
-        self.line_2.setFrameShadow(QFrame.Shadow.Sunken)
 
-        self.verticalLayout_5.addWidget(self.line_2)
+        self.verticalLayout_6.addWidget(self.widgetProperties_7)
 
-        self.widgetProperties_8 = QWidget(self.tabProperties)
+        self.line = QFrame(self.scrollAreaWidgetContentsProperties)
+        self.line.setObjectName(u"line")
+        self.line.setFrameShape(QFrame.Shape.HLine)
+        self.line.setFrameShadow(QFrame.Shadow.Sunken)
+
+        self.verticalLayout_6.addWidget(self.line)
+
+        self.widgetProperties_8 = QWidget(self.scrollAreaWidgetContentsProperties)
         self.widgetProperties_8.setObjectName(u"widgetProperties_8")
         self.horizontalLayout_14 = QHBoxLayout(self.widgetProperties_8)
         self.horizontalLayout_14.setSpacing(6)
@@ -610,6 +661,7 @@ class Ui_MainWindow(object):
 
         self.labelDimensionWidth = QLabel(self.widgetProperties_8)
         self.labelDimensionWidth.setObjectName(u"labelDimensionWidth")
+        self.labelDimensionWidth.setMinimumSize(QSize(36, 0))
         self.labelDimensionWidth.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.labelDimensionWidth.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -621,10 +673,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_14.addWidget(self.spinBoxDimensionWidth)
 
+        self.horizontalSpacer_10 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.verticalLayout_5.addWidget(self.widgetProperties_8)
+        self.horizontalLayout_14.addItem(self.horizontalSpacer_10)
 
-        self.widgetProperties_9 = QWidget(self.tabProperties)
+
+        self.verticalLayout_6.addWidget(self.widgetProperties_8)
+
+        self.widgetProperties_9 = QWidget(self.scrollAreaWidgetContentsProperties)
         self.widgetProperties_9.setObjectName(u"widgetProperties_9")
         self.horizontalLayout_13 = QHBoxLayout(self.widgetProperties_9)
         self.horizontalLayout_13.setSpacing(6)
@@ -638,6 +694,7 @@ class Ui_MainWindow(object):
 
         self.labelDimensionDepth = QLabel(self.widgetProperties_9)
         self.labelDimensionDepth.setObjectName(u"labelDimensionDepth")
+        self.labelDimensionDepth.setMinimumSize(QSize(36, 0))
         self.labelDimensionDepth.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.labelDimensionDepth.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -649,10 +706,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_13.addWidget(self.spinBoxDimensionDepth)
 
+        self.horizontalSpacer_11 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.verticalLayout_5.addWidget(self.widgetProperties_9)
+        self.horizontalLayout_13.addItem(self.horizontalSpacer_11)
 
-        self.widgetProperties_10 = QWidget(self.tabProperties)
+
+        self.verticalLayout_6.addWidget(self.widgetProperties_9)
+
+        self.widgetProperties_10 = QWidget(self.scrollAreaWidgetContentsProperties)
         self.widgetProperties_10.setObjectName(u"widgetProperties_10")
         self.horizontalLayout_15 = QHBoxLayout(self.widgetProperties_10)
         self.horizontalLayout_15.setSpacing(6)
@@ -666,6 +727,7 @@ class Ui_MainWindow(object):
 
         self.labelDimensionHeight = QLabel(self.widgetProperties_10)
         self.labelDimensionHeight.setObjectName(u"labelDimensionHeight")
+        self.labelDimensionHeight.setMinimumSize(QSize(36, 0))
         self.labelDimensionHeight.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.labelDimensionHeight.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -677,12 +739,20 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_15.addWidget(self.spinBoxDimensionHeight)
 
+        self.horizontalSpacer_12 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.verticalLayout_5.addWidget(self.widgetProperties_10)
+        self.horizontalLayout_15.addItem(self.horizontalSpacer_12)
+
+
+        self.verticalLayout_6.addWidget(self.widgetProperties_10)
 
         self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
-        self.verticalLayout_5.addItem(self.verticalSpacer_2)
+        self.verticalLayout_6.addItem(self.verticalSpacer_2)
+
+        self.scrollAreaProperties.setWidget(self.scrollAreaWidgetContentsProperties)
+
+        self.verticalLayout_5.addWidget(self.scrollAreaProperties)
 
         self.tabWidgetRightMenuTop.addTab(self.tabProperties, "")
         self.tabAdvanced = QWidget()
@@ -755,7 +825,7 @@ class Ui_MainWindow(object):
         self.pushButton3D.setDefault(False)
         self.tabWidgetDockerBottom.setCurrentIndex(1)
         self.tabWidgetRightMenuTop.setCurrentIndex(1)
-        self.tabWidgetRightMenuBottom.setCurrentIndex(0)
+        self.tabWidgetRightMenuBottom.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -800,6 +870,7 @@ class Ui_MainWindow(object):
         self.labelProject.setText(QCoreApplication.translate("MainWindow", u"Project:", None))
         self.labelClient.setText(QCoreApplication.translate("MainWindow", u"Client:", None))
         self.tabWidgetRightMenuTop.setTabText(self.tabWidgetRightMenuTop.indexOf(self.tabProject), QCoreApplication.translate("MainWindow", u"Project", None))
+        self.labelPropertiesBlank1.setText("")
         self.labelSelectedToolOrObject.setText(QCoreApplication.translate("MainWindow", u"selected tool or object", None))
         self.labelPosition.setText(QCoreApplication.translate("MainWindow", u"Position", None))
         self.labelPositionX.setText(QCoreApplication.translate("MainWindow", u"X", None))

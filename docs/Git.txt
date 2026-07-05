@@ -1,0 +1,9 @@
+Load:
+
+git clone https://github.com/gyver86/PyCabStudio.git
+
+Save:
+
+git add .
+git commit -m "progressComment"
+git push
